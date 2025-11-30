@@ -61,17 +61,17 @@ Prime numbers are used in modular addition to ensure that there would be no nois
 
 In our analysis, we use fast fourier transform to show how exact our W_E matrix exactly has learned the modular addition task. We plot a graph of the absolute values of the fast fourier transform of the W_E matrix, where the x-axis represents the frequency and the y-axis represents the absolute value of the fast fourier transform. We observe a few bright lines in the trained graph that are not present in the untrained graph, which indicates that the model has identified certain trigonometric patterns in the data. Which proves that the model has learned the task as intended without overfitting. Given here is the trained and untrained FFT graphs respectively.
 
-![Alt text](graphs\trained_fft.png "Trained FFT")
+![Alt text](graphs/trained_fft.png "Trained FFT")
 
-![Alt text](graphs\untrained_fft.png "Untrained FFT")
+![Alt text](graphs/untrained_fft.png "Untrained FFT")
 
 ### Attention Head Waves
 
 We also plot a graph of different attention heads where the x-axis represents the attention score and the y-axis represents the `b` value in the modular addition task. We observe that the attention heads in the trained model follow a certain wave-like pattern, while the attention heads in the untrained model do not show any such pattern. It is also important to note that in this case, the `a` value, is kept constant so we can observe how the model would behave if we only changed the `b` value. This indicates that the model has learned the task as intended without overfitting. Given here are the trained and untrained attention head waves respectively.
 
-![Alt text](graphs\trained_head_waves.png "Attention Head Waves")
+![Alt text](graphs/trained_head_waves.png "Attention Head Waves")
 
-![Alt text](graphs\untrained_head_waves.png "Untrained Head Waves")
+![Alt text](graphs/untrained_head_waves.png "Untrained Head Waves")
 
 ## Project Structure
 
